@@ -1,0 +1,58 @@
+<div class="content" role="main">
+    <div class="sidepanel">
+        <div class="photo">
+            <img src='{{cvData.imgPath}}' alt="Avatar">
+        </div>
+        <div class="skills">
+            <div class="section">
+                <div class="section-header">Skills</div>
+                <div class="skills">
+                    <span class="skill" *ngFor="let skill of cvData.skills">
+                        {{skill}}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="section">
+                <div class="section-header">Contact</div>
+                <div class="section-content"><mat-icon> location_on</mat-icon>{{cvData.address}}</div>
+                <div class="section-content"><mat-icon> phone</mat-icon>{{cvData.phone}}</div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div class="name">{{cvData.name}}</div>
+            <div class="role">{{cvData.primaryRole}}</div>
+        </div>
+        <div class="section">
+            <div class="section-header">About me</div>
+            <div class="section-content">{{cvData.description}}</div>
+        </div>
+        <div class="section">
+            <div class="section-header">Experience</div>
+            <div *ngFor="let exp of cvData.experiences">
+                <ng-container [ngTemplateOutlet]="Experience"
+                    [ngTemplateOutletContext]="{$implicit: exp}"></ng-container>
+            </div>
+
+        </div>
+    </div>
+
+    <ng-template #Experience let-data>
+        <div class="experience">
+            <div class="dates">{{data.from}} - {{data.to}}</div>
+            <div class="company">{{data.company}}</div>
+            <div class="description">{{data.description}}</div>
+            <div class="skills">
+                <span *ngFor="let skill of data.skills">
+                    {{skill}}
+                </span>
+            </div>
+        </div>
+    </ng-template>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,98 @@
+.content {
+    display: flex;
+    width: 60%;    
+    margin: auto;
+}
+
+.section {
+    background-color: white;
+    flex: 100%;
+
+    .section-header {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin: 0px 20px 20px 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid;
+    }
+
+    .section-content {
+        padding: 20px 0 20px 20px;
+        font-size: 24px;
+        mat-icon {
+            margin-right: 5px;
+        }
+    }
+}
+
+.sidepanel {
+    .photo {
+        background-color: #46423e;
+    }
+
+    display: flex;
+    flex-flow: column;
+
+    .skills {
+        .section {
+            background-color: #d9d9d9;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .contact {
+        .section{
+            background-color: #3d3836;
+            color: white;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    flex: 70;
+    justify-content: center;
+
+    .header {
+        color: white;
+        background-color: #3d3836;
+        flex: 100%;
+
+        .name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+            font-size: 70px;
+        }
+
+        .role {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+        }
+    }
+}
+
+.experience {
+    margin: 0px 20px 20px 30px;
+    padding-top: 20px;
+    font-size: 22px;
+    .dates {
+        font-weight: bold;
+    }
+    .company {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .description {
+
+    }
+    .skills{
+        font-size: 20px;
+    }
+}

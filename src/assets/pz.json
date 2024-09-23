@@ -1,0 +1,29 @@
+{
+    "imgPath": "../assets/pz-removebg.png",
+    "name": "Paweł Zamrij",
+    "address": "05-250 Radzymin, Szkolna 15B",
+    "phone": "+48 504 169 762",
+    "primaryRole": "Full-stack Software Developer",
+    "description": "Team Leader, Software Architect and Certified Software Developer with 20 years of commercial experience related to Microsoft technologies (but not only)",
+    "experiences": [
+        {
+            "from": "2006",
+            "to": "2019",
+            "company": "Intergraph",
+            "description": "Lorem",
+            "skills": [
+                "c#", ".NET"
+            ]
+        },
+        {
+            "from": "2000",
+            "to": "2006",
+            "company": "WPG S.A.",
+            "description": "Lorem",
+            "skills": [
+                "c#", ".NET"
+            ]
+        }
+    ],
+    "skills": ["c#", ".NET"]
+}
